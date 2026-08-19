@@ -10,4 +10,4 @@ Breve descripción de la propuesta: La galería estará compuesta por fotografí
 
 Objetivo de la galería: Mostrar y destacar diferentes expresiones de arte urbano que muchas veces forman parte del paisaje diario y pasan desapercibidas, resaltando sus colores, estilos y mensajes.
 
-Una breve descripción de los contenidos que tendrá: La galería tendrá fotografías de grafitis, murales, dibujos, frases e intervenciones artísticas tomadas en distintos espacios de la ciudad. Cada fotografía incluirá información como el lugar donde fue tomada y una breve descripción de lo que muestra.
+Breve descripción de los contenidos: La galería tendrá fotografías de grafitis, murales, dibujos, frases e intervenciones artísticas tomadas en distintos espacios de la ciudad. Cada fotografía incluirá información como el lugar donde fue tomada y una breve descripción de lo que muestra.

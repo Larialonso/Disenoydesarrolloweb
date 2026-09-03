@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paredes que Hablan</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,39 +17,107 @@
 
     <main>
 
-        <section>
+        <section class="presentacion">
             <h2>Sobre el proyecto</h2>
 
             <p>
-                Mi nombre es Lara Trinidad Alonso y esta página presenta
-                la propuesta de mi futura galería fotográfica.
+                Mi nombre es Lara Trinidad Alonso y esta galería reúne
+                fotografías propias de distintas expresiones de arte urbano.
             </p>
 
             <p>
                 La temática elegida es el grafiti y el arte callejero.
-                La galería estará formada por fotografías propias de
-                murales, grafitis e intervenciones artísticas encontradas
-                en distintos espacios de la ciudad.
+                La galería está formada por fotografías de murales,
+                grafitis e intervenciones artísticas encontradas en
+                distintos espacios.
             </p>
 
             <p>
                 El objetivo es mostrar cómo el arte urbano forma parte
-                del paisaje cotidiano y cómo transforma las paredes y
-                espacios de la ciudad mediante colores, diseños y mensajes.
+                del paisaje cotidiano y cómo transforma paredes y otros
+                espacios mediante colores, dibujos y mensajes.
             </p>
         </section>
 
-        <section>
+
+        <section class="imagen-destacada">
             <h2>Arte urbano</h2>
 
             <img
-                src="imagen-grafiti.jpeg"
-                alt="Grafiti representativo de la galería"
-                width="600"
+                src="img/facultad-arquitectura.jpeg"
+                alt="Arte urbano en la Facultad de Arquitectura de la UBA"
+                class="imagen-principal"
             >
         </section>
-    
+
+
         <section>
+            <h2>Galería</h2>
+
+            <div class="galeria">
+
+                <div class="tarjeta">
+
+                    <img
+                        src="img/facultad-arquitectura.jpeg"
+                        alt="Arte urbano en la Facultad de Arquitectura de la UBA"
+                    >
+
+                    <h3>Arte en la facultad</h3>
+
+                    <p>
+                        Grafitis e intervenciones presentes en la
+                        Facultad de Arquitectura de la UBA.
+                    </p>
+
+                    <a href="facultad.html">Ver más</a>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <img
+                        src="img/scaloneta.jpeg"
+                        alt="Mural de la Scaloneta"
+                    >
+
+                    <h3>La Scaloneta</h3>
+
+                    <p>
+                        Un mural realizado con tiza en Santa Clara del Mar,
+                        inspirado en la Selección Argentina.
+                    </p>
+
+                    <a href="scaloneta.html">Ver más</a>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <img
+                        src="img/ni-una-menos.jpeg"
+                        alt="Collage de Ni Una Menos"
+                    >
+
+                    <h3>Expresión colectiva</h3>
+
+                    <p>
+                        Un collage de imágenes, frases y mensajes registrado
+                        durante una marcha de Ni Una Menos en 2026.
+                    </p>
+
+                    <a href="niunamenos.html">Ver más</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="documentacion">
             <h2>Documentación</h2>
 
             <p>
@@ -55,14 +125,16 @@
                 la documentación del proyecto.
             </p>
 
-            
-            <a href="https://github.com/larialonso/Disenoydesarrolloweb/blob/main/README.md"
-               target="_blank">
+            <a
+                href="https://github.com/larialonso/Disenoydesarrolloweb/blob/main/README.md"
+                target="_blank"
+            >
                 Ver documentación
             </a>
         </section>
 
     </main>
+
 
     <footer>
         <p>Paredes que Hablan - Lara Trinidad Alonso</p>

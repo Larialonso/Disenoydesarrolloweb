@@ -5,9 +5,6 @@ body {
     color: #222;
 }
 
-
-/* ENCABEZADO */
-
 header {
     background-color: #222;
     color: white;
@@ -24,17 +21,12 @@ header p {
     margin-top: 8px;
 }
 
-
-/* CONTENIDO GENERAL */
-
 main {
     width: 94%;
     max-width: 1200px;
     margin: 35px auto;
 }
 
-
-/* PRESENTACIÓN */
 
 .presentacion {
     text-align: center;
@@ -46,9 +38,6 @@ main {
     margin: 10px auto;
     line-height: 1.6;
 }
-
-
-/* IMAGEN DESTACADA */
 
 .imagen-destacada {
     background-color: white;
@@ -88,8 +77,6 @@ main {
 }
 
 
-/* GALERÍA */
-
 .seccion-galeria h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -101,8 +88,6 @@ main {
     justify-content: space-between;
 }
 
-
-/* TARJETAS */
 
 .tarjeta {
     background-color: white;
@@ -146,8 +131,6 @@ main {
 }
 
 
-/* DOCUMENTACIÓN */
-
 .documentacion {
     margin-top: 45px;
     text-align: center;
@@ -157,8 +140,6 @@ main {
     color: #222;
 }
 
-
-/* DETALLE DE CADA FOTO */
 
 .detalle {
     width: 90%;
@@ -189,8 +170,6 @@ main {
 }
 
 
-/* PIE */
-
 footer {
     background-color: #222;
     color: white;
@@ -199,8 +178,6 @@ footer {
     margin-top: 50px;
 }
 
-
-/* ADAPTACIÓN PARA PANTALLAS CHICAS */
 
 @media (max-width: 750px) {
 

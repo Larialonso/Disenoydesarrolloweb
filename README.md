@@ -2,7 +2,7 @@
 
 Nombre y apellido: Lara Alonso
 
-Título o nombre tentativo de la galería: Historias en las paredes
+Título o nombre tentativo de la galería: Paredes que hablan
 
 Tema elegido: Grafitis y arte callejero
 

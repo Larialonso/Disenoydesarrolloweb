@@ -6,6 +6,8 @@ body {
 }
 
 
+/* ENCABEZADO */
+
 header {
     background-color: #222;
     color: white;
@@ -22,24 +24,71 @@ header p {
     margin-top: 8px;
 }
 
+
+/* CONTENIDO GENERAL */
+
 main {
     width: 94%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 35px auto;
 }
 
 
+/* PRESENTACIÓN */
+
 .presentacion {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .presentacion p {
-    max-width: 900px;
+    max-width: 850px;
     margin: 10px auto;
     line-height: 1.6;
 }
 
+
+/* IMAGEN DESTACADA */
+
+.imagen-destacada {
+    background-color: white;
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.contenido-destacado {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.imagen-principal {
+    width: 42%;
+    max-width: 360px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.texto-destacado {
+    flex: 1;
+}
+
+.texto-destacado h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.texto-destacado p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+/* GALERÍA */
 
 .seccion-galeria h2 {
     text-align: center;
@@ -53,6 +102,7 @@ main {
 }
 
 
+/* TARJETAS */
 
 .tarjeta {
     background-color: white;
@@ -64,7 +114,7 @@ main {
 
 .tarjeta img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -95,6 +145,9 @@ main {
     background-color: #d1a700;
 }
 
+
+/* DOCUMENTACIÓN */
+
 .documentacion {
     margin-top: 45px;
     text-align: center;
@@ -105,41 +158,38 @@ main {
 }
 
 
+/* DETALLE DE CADA FOTO */
+
 .detalle {
+    width: 90%;
+    max-width: 760px;
+    margin: 35px auto;
     text-align: center;
-    max-width: 900px;
+}
+
+.detalle h2 {
+    margin-bottom: 20px;
 }
 
 .detalle p {
+    max-width: 650px;
+    margin: 15px auto;
     line-height: 1.7;
     text-align: left;
 }
 
-
 .imagen-detalle {
-    width: 65%;
-    max-width: 550px;
-    max-height: 500px;
+    width: auto;
+    max-width: 420px;
+    max-height: 420px;
     object-fit: contain;
-    margin: 20px auto;
     display: block;
+    margin: 20px auto;
     border-radius: 6px;
 }
 
-.imagen-principal {
-    width: 40%;
-    max-width: 450px;
-    height: 240px;
-    object-fit: cover;
-    margin: 20px auto;
-    display: block;
-    border-radius: 6px;
-}
-.imagen-destacada {
-    text-align: center;
-    margin-bottom: 40px;
-}
 
+/* PIE */
 
 footer {
     background-color: #222;
@@ -147,4 +197,33 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+}
+
+
+/* ADAPTACIÓN PARA PANTALLAS CHICAS */
+
+@media (max-width: 750px) {
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .contenido-destacado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-principal {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .imagen-detalle {
+        width: 90%;
+        max-width: 400px;
+    }
 }

@@ -6,8 +6,6 @@ body {
 }
 
 
-/* ENCABEZADO */
-
 header {
     background-color: #222;
     color: white;
@@ -24,17 +22,12 @@ header p {
     margin-top: 8px;
 }
 
-
-/* CONTENIDO */
-
 main {
     width: 94%;
     max-width: 1300px;
     margin: 35px auto;
 }
 
-
-/* PRESENTACIÓN */
 
 .presentacion {
     text-align: center;
@@ -48,8 +41,6 @@ main {
 }
 
 
-/* GALERÍA */
-
 .seccion-galeria h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -62,7 +53,6 @@ main {
 }
 
 
-/* TARJETAS */
 
 .tarjeta {
     background-color: white;
@@ -105,9 +95,6 @@ main {
     background-color: #d1a700;
 }
 
-
-/* DOCUMENTACIÓN */
-
 .documentacion {
     margin-top: 45px;
     text-align: center;
@@ -117,8 +104,6 @@ main {
     color: #222;
 }
 
-
-/* PÁGINAS DE DETALLE */
 
 .detalle {
     text-align: center;
@@ -137,6 +122,18 @@ main {
     border-radius: 6px;
 }
 
+.imagen-destacada {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imagen-principal {
+    width: 55%;
+    max-width: 650px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+}
 
 footer {
     background-color: #222;

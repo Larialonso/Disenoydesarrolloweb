@@ -115,25 +115,31 @@ main {
     text-align: left;
 }
 
+
 .imagen-detalle {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px 0;
+    width: 65%;
+    max-width: 550px;
+    max-height: 500px;
+    object-fit: contain;
+    margin: 20px auto;
+    display: block;
     border-radius: 6px;
 }
 
+.imagen-principal {
+    width: 40%;
+    max-width: 450px;
+    height: 240px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border-radius: 6px;
+}
 .imagen-destacada {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.imagen-principal {
-    width: 55%;
-    max-width: 650px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 6px;
-}
 
 footer {
     background-color: #222;

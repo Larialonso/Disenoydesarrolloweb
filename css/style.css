@@ -1,65 +1,105 @@
+:root {
+    --negro: #222222;
+    --gris-claro: #f4f4f4;
+    --blanco: #ffffff;
+    --amarillo: #e7b900;
+    --amarillo-hover: #d1a700;
+    --gris-texto: #555555;
+    --sombra: rgba(0, 0, 0, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    font-size: 1rem;
 }
 
 header {
-    background-color: #222;
-    color: white;
+    background-color: var(--negro);
+    color: var(--blanco);
     text-align: center;
-    padding: 30px;
+    padding: 1.8rem 1rem 1.2rem;
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 header p {
-    margin-top: 8px;
+    margin: 0.5rem 0 0;
+}
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.75rem 4%;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.82rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.3rem;
+}
+
+.navegacion a:hover,
+.navegacion a:focus {
+    background-color: var(--amarillo);
+    color: var(--negro);
 }
 
 main {
     width: 94%;
-    max-width: 1200px;
-    margin: 35px auto;
+    max-width: 75rem;
+    margin: 2rem auto;
 }
-
 
 .presentacion {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.2rem;
 }
 
 .presentacion p {
-    max-width: 850px;
-    margin: 10px auto;
+    max-width: 55rem;
+    margin: 0.6rem auto;
     line-height: 1.6;
 }
 
 .imagen-destacada {
-    background-color: white;
-    max-width: 850px;
-    margin: 0 auto 45px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    background-color: var(--blanco);
+    max-width: 53rem;
+    margin: 0 auto 2.8rem;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 0.45rem var(--sombra);
 }
 
 .contenido-destacado {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 .imagen-principal {
-    width: 42%;
-    max-width: 360px;
-    height: 220px;
+    width: 40%;
+    max-width: 22rem;
+    height: 13rem;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 0.4rem;
 }
 
 .texto-destacado {
@@ -68,125 +108,119 @@ main {
 
 .texto-destacado h2 {
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
 .texto-destacado p {
     line-height: 1.6;
-    margin-bottom: 0;
+    color: var(--gris-texto);
 }
 
-
-.seccion-galeria h2 {
+.seccion-galeria > h2 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 .galeria {
-    display: flex;
-    gap: 25px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
-
 .tarjeta {
-    background-color: white;
-    width: calc(33.33% - 17px);
-    border-radius: 6px;
+    background-color: var(--blanco);
+    border-radius: 0.45rem;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.15rem 0.45rem var(--sombra);
+    display: flex;
+    flex-direction: column;
 }
 
 .tarjeta img {
     width: 100%;
-    height: 220px;
+    height: 13rem;
     object-fit: cover;
 }
 
 .tarjeta h3 {
-    font-size: 20px;
-    margin: 18px 18px 10px;
+    font-size: 1.2rem;
+    margin: 1rem 1rem 0.5rem;
 }
 
 .tarjeta p {
-    font-size: 14px;
+    font-size: 0.92rem;
     line-height: 1.5;
-    margin: 0 18px;
+    margin: 0 1rem;
+    flex-grow: 1;
 }
 
 .tarjeta a,
 .volver {
     display: inline-block;
-    background-color: #e7b900;
-    color: #222;
+    align-self: flex-start;
+    background-color: var(--amarillo);
+    color: var(--negro);
     text-decoration: none;
-    padding: 9px 14px;
-    margin: 18px;
-    border-radius: 4px;
+    padding: 0.55rem 0.9rem;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
 }
 
 .tarjeta a:hover,
 .volver:hover {
-    background-color: #d1a700;
+    background-color: var(--amarillo-hover);
 }
 
-
 .documentacion {
-    margin-top: 45px;
+    margin-top: 2.8rem;
     text-align: center;
 }
 
 .documentacion a {
-    color: #222;
+    color: var(--negro);
+    font-weight: bold;
 }
 
-
 .detalle {
-    width: 90%;
-    max-width: 760px;
-    margin: 35px auto;
+    width: 92%;
+    max-width: 50rem;
+    margin: 2rem auto;
     text-align: center;
 }
 
 .detalle h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .detalle p {
-    max-width: 650px;
-    margin: 15px auto;
+    max-width: 42rem;
+    margin: 0.9rem auto;
     line-height: 1.7;
     text-align: left;
 }
 
 .imagen-detalle {
     width: auto;
-    max-width: 420px;
-    max-height: 420px;
+    max-width: min(90%, 28rem);
+    max-height: 30rem;
     object-fit: contain;
     display: block;
-    margin: 20px auto;
-    border-radius: 6px;
+    margin: 1.25rem auto;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.15rem 0.45rem var(--sombra);
 }
-
 
 footer {
-    background-color: #222;
-    color: white;
+    background-color: var(--negro);
+    color: var(--blanco);
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 1.25rem;
+    margin-top: 3rem;
 }
 
-
-@media (max-width: 750px) {
-
+@media (max-width: 56rem) {
     .galeria {
-        flex-direction: column;
-    }
-
-    .tarjeta {
-        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .contenido-destacado {
@@ -195,12 +229,55 @@ footer {
     }
 
     .imagen-principal {
+        width: 70%;
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 38rem) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 1.4rem;
+    }
+
+    .navegacion {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navegacion a {
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta img {
+        height: 14rem;
+    }
+
+    .imagen-principal {
         width: 100%;
-        max-width: 360px;
+        height: 12rem;
     }
 
     .imagen-detalle {
-        width: 90%;
-        max-width: 400px;
+        max-width: 95%;
+        max-height: 25rem;
     }
+}
+
+.ubicacion {
+    text-align: center !important;
+    margin: 0.35rem auto 1rem !important;
+    color: var(--gris-texto);
+    font-size: 0.95rem;
 }

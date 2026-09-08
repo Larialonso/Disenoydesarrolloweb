@@ -1,167 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Paredes que Hablan</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
         <h1>Paredes que Hablan</h1>
-        <p>Galería de grafitis y arte callejero</p>
+        <p>Galería de grafitis y arte urbano</p>
     </header>
 
+    <nav class="navegacion" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="facultad.html">Arte en la facultad</a>
+            <a href="scaloneta.html">La Scaloneta</a>
+            <a href="niunamenos.html">Expresión colectiva</a>
+            <a href="personaje.html">Personaje y corazones</a>
+            <a href="abuela.html">Luche como una abuela</a>
+            <a href="bandoneonista.html">Música en la ciudad</a>
+            <a href="realidades.html">Realidades poco frecuentes</a>
+            <a href="collage.html">Collage gráfico</a>
+            <a href="mural-futbolero.html">Mural futbolero</a>
+            <a href="retrato-persiana.html">Retrato sobre persiana</a>
+            <a href="lineas-urbanas.html">Líneas urbanas</a>
+        </nav>
+
     <main>
-
         <section class="presentacion">
-
             <h2>Sobre el proyecto</h2>
-
-            <p>
-                Mi nombre es Lara Trinidad Alonso y esta galería reúne
-                fotografías propias de distintas expresiones de arte urbano.
-            </p>
-
-            <p>
-                La temática elegida es el grafiti y el arte callejero.
-                La galería está formada por fotografías de murales,
-                grafitis e intervenciones artísticas encontradas en
-                distintos espacios.
-            </p>
-
-            <p>
-                El objetivo es mostrar cómo el arte urbano forma parte
-                del paisaje cotidiano y cómo transforma paredes y otros
-                espacios mediante colores, dibujos y mensajes.
-            </p>
-
+            <p>Mi nombre es Lara Trinidad Alonso y esta galería reúne fotografías propias de distintas expresiones de arte urbano.</p>
+            <p>La selección incluye murales, grafitis, stencils, collages e intervenciones encontradas en distintos espacios.</p>
+            <p>El objetivo es mostrar cómo estas obras aparecen en lugares cotidianos y pasan a formar parte del paisaje de la ciudad.</p>
         </section>
 
+        <section class="imagen-destacada">
+            <div class="contenido-destacado">
+                <img src="img/niunamenos.jpeg" alt="Intervención colectiva de Ni Una Menos" class="imagen-principal">
+                <div class="texto-destacado">
+                    <h2>Arte urbano y expresión</h2>
+                    <p>Las paredes, persianas, fachadas y otros espacios pueden convertirse en soportes para imágenes, mensajes y formas de expresión muy diferentes.</p>
+                </div>
+            </div>
+        </section>
 
-       <section class="imagen-destacada">
-
-    <div class="contenido-destacado">
-
-        <img
-            src="../img/niunamenos.jpeg"
-            alt="Intervención colectiva durante una marcha de Ni Una Menos"
-            class="imagen-principal"
-        >
-
-        <div class="texto-destacado">
-
-            <h2>Arte urbano y expresión</h2>
-
-            <p>
-                Las intervenciones urbanas pueden aparecer de distintas formas:
-                murales, dibujos, grafitis, frases o imágenes que se combinan
-                con el espacio donde fueron creadas.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <section class="seccion-galeria">
-
+        <section class="seccion-galeria" id="galeria">
             <h2>Galería</h2>
-
             <div class="galeria">
 
-                <div class="tarjeta">
-
-                    <img
-                        src="../img/facultad-arquitectura.jpeg"
-                        alt="Arte urbano en la Facultad de Arquitectura de la UBA"
-                    >
-
-                    <h3>Arte en la facultad</h3>
-
-                    <p>
-                        Grafitis e intervenciones presentes en la
-                        Facultad de Arquitectura de la UBA.
-                    </p>
-
-                    <a href="facultad.html">Ver más</a>
-
-                </div>
-
-
-                <div class="tarjeta">
-
-                    <img
-                        src="../img/scaloneta.jpeg"
-                        alt="Mural de la Scaloneta"
-                    >
-
-                    <h3>La Scaloneta</h3>
-
-                    <p>
-                        Un mural realizado con tiza en Santa Clara del Mar,
-                        inspirado en la Selección Argentina.
-                    </p>
-
-                    <a href="scaloneta.html">Ver más</a>
-
-                </div>
-
-
-                <div class="tarjeta">
-
-                    <img
-                        src="../img/niunamenos.jpeg"
-                        alt="Collage de Ni Una Menos"
-                    >
-
-                    <h3>Expresión colectiva</h3>
-
-                    <p>
-                        Un collage de imágenes, frases y mensajes registrado
-                        durante una marcha de Ni Una Menos en 2026.
-                    </p>
-
-                    <a href="niunamenos.html">Ver más</a>
-
-                </div>
-
+            <article class="tarjeta">
+                <img src="img/facultad-arquitectura.jpeg" alt="Arte en la facultad">
+                <h3>Arte en la facultad</h3>
+                <p>Una combinación de grafitis, dibujos y stickers que intervienen una estructura de hormigón.</p>
+                <a href="facultad.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/scaloneta.jpeg" alt="La Scaloneta">
+                <h3>La Scaloneta</h3>
+                <p>Un mural realizado con tiza inspirado en la Selección Argentina y sus jugadores.</p>
+                <a href="scaloneta.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/niunamenos.jpeg" alt="Expresión colectiva">
+                <h3>Expresión colectiva</h3>
+                <p>Un collage de imágenes, frases y mensajes que reúne distintas expresiones colectivas.</p>
+                <a href="niunamenos.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/personaje-corazones.jpeg" alt="Personaje y corazones">
+                <h3>Pajarito</h3>
+                <p>Un pequeño personaje colorido acompañado por un globo de diálogo con corazones.</p>
+                <a href="personaje.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/luche-abuela.jpeg" alt="Luche como una abuela">
+                <h3>Luche como una abuela</h3>
+                <p>Un stencil que combina una frase con el símbolo del pañuelo blanco.</p>
+                <a href="abuela.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/bandoneonista.jpeg" alt="Música en la ciudad">
+                <h3>Música en la ciudad</h3>
+                <p>La figura de un bandoneonista en blanco y negro integrada a una pared urbana.</p>
+                <a href="bandoneonista.html">Ver más</a>
+            </article>
+            
+            <article class="tarjeta">
+                <img src="img/realidades.jpeg" alt="Realidades poco frecuentes">
+                <h3>Realidades poco frecuentes</h3>
+                <p>Un mural de gran escala protagonizado por una figura y un recipiente transparente.</p>
+                <a href="realidades.html">Ver más</a>
+            </article>
+            
+            <article class="tarjeta">
+                <img src="img/collage-grafico.jpeg" alt="Collage gráfico">
+                <h3>Collage gráfico</h3>
+                <p>Una composición de afiches e ilustraciones con referencias a la música, el cine y la cultura popular.</p>
+                <a href="collage.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/mural-futbolero.jpeg" alt="Mural futbolero">
+                <h3>Mural de Messi</h3>
+                <p>Un retrato de gran escala de Lionel Messi con la camiseta de la Selección Argentina.</p>
+                <a href="mural-futbolero.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/retrato-persiana.jpeg" alt="Retrato sobre persiana">
+                <h3>Retrato sobre persiana</h3>
+                <p>Un retrato pintado sobre una persiana metálica que aprovecha toda su superficie.</p>
+                <a href="retrato-persiana.html">Ver más</a>
+            </article>
+            <article class="tarjeta">
+                <img src="img/lineas-urbanas.jpeg" alt="Líneas urbanas">
+                <h3>Líneas urbanas</h3>
+                <p>Una intervención en blanco y negro formada por líneas que se cruzan y generan distintas figuras.</p>
+                <a href="lineas-urbanas.html">Ver más</a>
+            </article>
             </div>
-
         </section>
-
 
         <section class="documentacion">
-
             <h2>Documentación</h2>
-
-            <p>
-                Podés consultar más información sobre la propuesta en
-                la documentación del proyecto.
-            </p>
-
-            <a
-                href="https://github.com/larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/README.md"
-                target="_blank"
-            >
-                Ver documentación
-            </a>
-
+            <p>La documentación del proyecto se encuentra en el README del repositorio.</p>
+            <a href="https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/README.md" target="_blank" rel="noopener">Ver documentación</a>
         </section>
-
     </main>
-
 
     <footer>
         <p>Paredes que Hablan - Lara Trinidad Alonso</p>
     </footer>
-
 </body>
-
 </html>

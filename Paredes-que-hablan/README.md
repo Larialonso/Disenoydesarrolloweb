@@ -1,12 +1,11 @@
-# Disenoydesarrolloweb
 
 Nombre y apellido: Lara Alonso
 
-Título o nombre tentativo de la galería: Paredes que hablan
+Título de la galería: Paredes que hablan
 
 Tema elegido: Grafitis y arte callejero
 
-Breve descripción de la propuesta: La galería estará compuesta por fotografías propias de grafitis, murales y distintas expresiones de arte callejero encontradas en la ciudad
+Breve descripción de la propuesta: La galería estará compuesta por fotografías propias de grafitis, murales y distintas expresiones de arte callejero.
 
 Objetivo de la galería: Mostrar y destacar diferentes expresiones de arte urbano que muchas veces forman parte del paisaje diario y pasan desapercibidas, resaltando sus colores, estilos y mensajes.
 
